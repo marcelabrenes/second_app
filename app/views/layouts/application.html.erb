@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SecondApp60</title>
+    <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+​	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+​
+  <body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+    			<!-- Header -->
+				<div id="header">
+​
+					<!-- Inner -->
+						<div class="inner">
+							<header>
+								<h1><a href="index.html" id="logo">Second App</a></h1>
+							</header>
+						</div>
+​
+            <!-- Nav -->
+						<nav id="nav">
+            	<ul>
+              <li>	<%= link_to('User', users_path) %><li>
+							<li><%= link_to 'Test', test_path %><li>
+							<li><%= link_to('Home', index_path)%><li>
+							<li><%= link_to('About us', about_us_path)%><li>
+							</ul>
+						</nav>           
+​
+				</div>
+​
+        <!-- Main -->
+				<div class="wrapper style1">
+​
+					<div class="container">
+						<article id="main" class="special">
+							<header>
+                <%= yield %>
+							</header>
+            </article>   
+          </div>         
+        </div>
+​
+<div id="footer">
+<div class="container">
+	  <div class="row">
+		  <div class="col-12">
+
+			  <!-- Contact -->
+				<section class="contact">
+					<header>
+						<h3>Nisl turpis nascetur interdum?</h3>
+					</header>
+					<p>Urna nisl non quis interdum mus ornare ridiculus egestas ridiculus lobortis vivamus tempor aliquet.</p>
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
+						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+					</ul>
+				</section>
+
+			  <!-- Copyright -->
+				<div class="copyright">
+					<ul class="menu">
+						<li>&copy;All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>  
+​
+    </div>
+  </body>
+</html>
